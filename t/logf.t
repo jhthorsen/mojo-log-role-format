@@ -1,6 +1,6 @@
 use Mojo::Base -strict;
 use Mojo::Log;
-use Test::More;
+use Test2::V0;
 
 subtest normal => sub {
   my $log = make_logger();
@@ -27,7 +27,7 @@ done_testing;
 sub history_is {
   my ($log, $exp) = @_;
   my @history = map { [@$_[1, 2]] } @{$log->history};
-  is_deeply \@history, $exp, 'logged';
+  is \@history, $exp, 'logged';
 }
 
 sub make_logger {

@@ -13,8 +13,8 @@ my %WriteMakefileArgs = (
   ABSTRACT_FROM => 'lib/Mojo/Log/Role/Format.pm',
   VERSION_FROM  => 'lib/Mojo/Log/Role/Format.pm',
   EXE_FILES     => [],
-  TEST_REQUIRES => {'Test2::V0'   => '0.000145'},
-  PREREQ_PM     => {'Mojolicious' => '9.00'},
+  TEST_REQUIRES => {'Test2::V0'  => '0.000145'},
+  PREREQ_PM     => {'Role::Tiny' => '2.000001', 'Mojolicious' => '9.00'},
   META_MERGE    => {
     'dynamic_config' => 0,
     'meta-spec'      => {version   => 2},
