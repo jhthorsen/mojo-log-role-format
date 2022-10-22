@@ -3,7 +3,7 @@ use Mojo::Base -role;
 
 use overload ();
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 has logf_serialize => sub { \&_serialize };
 
