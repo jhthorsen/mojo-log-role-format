@@ -4,14 +4,14 @@ use warnings;
 use utf8;
 use ExtUtils::MakeMaker;
 
-my $GITHUB_URL = 'https://github.com/jhthorsen/${PROJECT_NAME_LC}';
+my $GITHUB_URL = 'https://github.com/jhthorsen/mojo-log-role-format';
 
 my %WriteMakefileArgs = (
   AUTHOR        => 'Jan Henning Thorsen <jhthorsen@cpan.org>',
   LICENSE       => 'artistic_2',
-  NAME          => '${MAIN_PM_NAME}',
-  ABSTRACT_FROM => '${MAIN_PM_FILE}',
-  VERSION_FROM  => '${MAIN_PM_FILE}',
+  NAME          => 'Mojo::Log::Role::Format',
+  ABSTRACT_FROM => 'lib/Mojo/Log/Role/Format.pm',
+  VERSION_FROM  => 'lib/Mojo/Log/Role/Format.pm',
   EXE_FILES     => [],
   TEST_REQUIRES => {'Test2::V0'   => '0.000145'},
   PREREQ_PM     => {'Mojolicious' => '9.00'},
