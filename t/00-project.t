@@ -45,3 +45,4 @@ Test::CPAN::Changes::changes_file_ok();
 __DATA__
 Henning
 Thorsen
+logf
